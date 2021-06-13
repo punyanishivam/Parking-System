@@ -11,5 +11,4 @@ class CreateParkingLotService(CreateParkingLotInterface):
         for i in range(1, lot_size+1):
             parking_lot.available_spots.append(ParkingSpot(i))
 
-        print("Created parking of {} slots".format(lot_size))
-        return parking_lot
+        return parking_lot, "Created parking of {} slots".format(lot_size)
